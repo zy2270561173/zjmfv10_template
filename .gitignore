@@ -1,0 +1,47 @@
+# 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE 配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+
+# 环境变量文件
+.env
+.env.local
+
+# 缓存文件
+cache/
+temp_cache/
+
+# 编译输出
+dist/
+build/
+
+# 依赖文件夹
+node_modules/
+vendor/
+
+# 数据库文件
+*.sqlite
+*.db
+
+# 上传的文件(如果不需要版本控制)
+uploads/
+storage/app/public/
+
+# 配置文件(如果包含敏感信息)
+config.local.php
