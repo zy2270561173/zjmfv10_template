@@ -1,8 +1,11 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3891180 */
-  src: url('iconfont.woff2?t=1677325584554') format('woff2'),
-       url('iconfont.woff?t=1677325584554') format('woff'),
-       url('iconfont.ttf?t=1677325584554') format('truetype');
+  font-family: "iconfont";
+  src: url('iconfont.eot?t=1766796234036'); /* IE9 */
+  src: url('iconfont.eot?t=1766796234036#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff2?t=1766796234036') format('woff2'),
+  url('iconfont.woff?t=1766796234036') format('woff'),
+  url('iconfont.ttf?t=1766796234036') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1766796234036#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -53,3 +56,126 @@
   content: "\e743";
 }
 
+.icon-home:before {
+  content: "\e600";
+}
+
+.icon-shopping-cart:before {
+  content: "\e601";
+}
+
+.icon-user:before {
+  content: "\e602";
+}
+
+.icon-bell:before {
+  content: "\e603";
+}
+
+.icon-settings:before {
+  content: "\e604";
+}
+
+.icon-plus:before {
+  content: "\e605";
+}
+
+.icon-minus:before {
+  content: "\e606";
+}
+
+.icon-edit:before {
+  content: "\e607";
+}
+
+.icon-trash:before {
+  content: "\e608";
+}
+
+.icon-check:before {
+  content: "\e609";
+}
+
+.icon-close:before {
+  content: "\e60a";
+}
+
+.icon-star:before {
+  content: "\e60b";
+}
+
+.icon-heart:before {
+  content: "\e60c";
+}
+
+.icon-clock:before {
+  content: "\e60d";
+}
+
+.icon-calendar:before {
+  content: "\e60e";
+}
+
+.icon-dollar:before {
+  content: "\e60f";
+}
+
+.icon-credit-card:before {
+  content: "\e610";
+}
+
+.icon-gift:before {
+  content: "\e611";
+}
+
+.icon-rocket:before {
+  content: "\e612";
+}
+
+.icon-headphones:before {
+  content: "\e613";
+}
+
+.icon-watch:before {
+  content: "\e614";
+}
+
+.icon-laptop:before {
+  content: "\e615";
+}
+
+.icon-smartphone:before {
+  content: "\e616";
+}
+
+.icon-gamepad:before {
+  content: "\e617";
+}
+
+.icon-speaker:before {
+  content: "\e618";
+}
+
+.icon-mouse:before {
+  content: "\e619";
+}
+
+.icon-keyboard:before {
+  content: "\e61b";
+}
+
+.icon-truck:before {
+  content: "\e61c";
+}
+
+.icon-refresh:before {
+  content: "\e61d";
+}
+
+.icon-shield:before {
+  content: "\e61e";
+}
+
+.icon-message:before {
+  content: "\e61f";
+}

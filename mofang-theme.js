@@ -53,9 +53,9 @@ const MofangTheme = {
       const icon = btn.querySelector('.mofang-theme-icon');
       if (icon) {
         if (theme === this.THEMES.DARK) {
-          icon.textContent = '☀️';
+          icon.className = 'mofang-theme-icon iconfont icon-star';
         } else {
-          icon.textContent = '🌙';
+          icon.className = 'mofang-theme-icon iconfont icon-star';
         }
       }
     });
