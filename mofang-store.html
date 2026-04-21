@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>魔方 V10 - 商城首页</title>
+  <link rel="stylesheet" href="mofang-theme.css">
+</head>
+<body>
+  <header class="mofang-store-header mofang-glass">
+    <div class="mofang-store-header-inner">
+      <div class="mofang-store-logo">
+        <span class="mofang-text-gradient mofang-text-xl mofang-font-bold">魔方 V10</span>
+        <span class="mofang-text-sm mofang-text-secondary">精选好物，品质生活</span>
+      </div>
+      <nav class="mofang-store-nav">
+        <a href="#" class="mofang-store-nav-item mofang-store-nav-item-active">首页</a>
+        <a href="#" class="mofang-store-nav-item">全部商品</a>
+        <a href="#" class="mofang-store-nav-item">限时特惠</a>
+        <a href="#" class="mofang-store-nav-item">新品上架</a>
+        <a href="#" class="mofang-store-nav-item">关于我们</a>
+      </nav>
+      <div class="mofang-store-header-right">
+        <div class="mofang-store-search">
+          <input type="text" class="mofang-input" placeholder="搜索你想要的商品...">
+          <button class="mofang-store-search-btn">🔍</button>
+        </div>
+        <button class="mofang-theme-toggle" id="themeToggle" aria-label="切换主题">
+          <span class="mofang-theme-icon">🌙</span>
+        </button>
+        <button class="mofang-store-cart">
+          <span>🛒</span>
+          <span class="mofang-store-cart-badge">3</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mofang-store-main">
+    <section class="mofang-store-hero">
+      <div class="mofang-store-hero-content mofang-fade-in-up">
+        <span class="mofang-badge mofang-badge-primary">新品首发</span>
+        <h1 class="mofang-text-3xl mofang-font-bold mofang-text-primary mofang-m-top-lg">
+          精选好物，<br>开启品质生活
+        </h1>
+        <p class="mofang-text-base mofang-text-secondary mofang-m-top-md">
+          限时特惠，全场8折起。精选商品，品质保障，让每一次购物都物超所值。
+        </p>
+        <div class="mofang-flex mofang-gap-md mofang-m-top-xl">
+          <button class="mofang-btn mofang-btn-primary mofang-btn-lg">
+            立即选购
+          </button>
+          <button class="mofang-btn mofang-btn-outline mofang-btn-lg">
+            了解更多
+          </button>
+        </div>
+      </div>
+      <div class="mofang-store-hero-visual mofang-fade-in-up">
+        <div class="mofang-store-hero-card" style="background: linear-gradient(135deg, #FF6699 0%, #FFB366 100%);">
+          <span class="mofang-store-hero-icon">✨</span>
+        </div>
+        <div class="mofang-store-hero-card" style="background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);">
+          <span class="mofang-store-hero-icon">🎁</span>
+        </div>
+        <div class="mofang-store-hero-card" style="background: linear-gradient(135deg, #00D2D3 0%, #06B6D4 100%);">
+          <span class="mofang-store-hero-icon">🚀</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="mofang-store-section">
+      <div class="mofang-store-container">
+        <div class="mofang-store-section-header mofang-flex-between mofang-fade-in-up">
+          <div>
+            <h2 class="mofang-text-xl mofang-font-bold mofang-text-primary">热门商品</h2>
+            <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">大家都在买的好物</p>
+          </div>
+          <a href="#" class="mofang-text-base mofang-text-primary">查看全部 →</a>
+        </div>
+
+        <div class="mofang-store-products mofang-bento-grid mofang-bento-grid-4">
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-1">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(255, 102, 153, 0.1) 0%, rgba(255, 179, 102, 0.1) 100%);">
+              <span class="mofang-product-card-icon">🎧</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-primary">热销</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">高级无线蓝牙耳机</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">主动降噪，超长续航，音质清晰</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥299</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥599</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-2">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(0, 210, 211, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+              <span class="mofang-product-card-icon">⌚</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-success">新品</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">智能运动手表</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">心率监测，运动追踪，防水设计</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥599</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥999</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-3">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);">
+              <span class="mofang-product-card-icon">💻</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-warning">限时</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">轻薄便携笔记本</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">高性能处理器，超长续航，轻薄设计</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥4,999</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥6,999</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-4">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);">
+              <span class="mofang-product-card-icon">📱</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-info">推荐</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">旗舰智能手机</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">超清屏幕，超强性能，超长待机</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥3,999</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥5,999</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-1">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);">
+              <span class="mofang-product-card-icon">🎮</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-primary">热门</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">游戏手柄</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">无线连接，震动反馈，超长续航</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥199</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥299</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-2">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%);">
+              <span class="mofang-product-card-icon">🔊</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-success">畅销</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">便携式蓝牙音箱</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">防水设计，震撼音质，超长续航</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥159</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥259</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-3">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 197, 253, 0.1) 100%);">
+              <span class="mofang-product-card-icon">🖱️</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-warning">特惠</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">无线游戏鼠标</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">高精度传感器，可编程按键</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥129</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥199</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-product-card mofang-card mofang-fade-in-up mofang-fade-in-up-delay-4">
+            <div class="mofang-product-card-image" style="background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(251, 146, 60, 0.1) 100%);">
+              <span class="mofang-product-card-icon">⌨️</span>
+              <span class="mofang-product-card-tag mofang-badge mofang-badge-info">精选</span>
+            </div>
+            <div class="mofang-product-card-content mofang-p-lg">
+              <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary">机械键盘</h3>
+              <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">RGB背光，青轴手感，全键无冲</p>
+              <div class="mofang-product-card-meta mofang-flex-between mofang-m-top-lg">
+                <div class="mofang-product-card-price">
+                  <span class="mofang-text-xl mofang-font-bold mofang-text-primary">¥359</span>
+                  <span class="mofang-text-sm mofang-text-muted mofang-line-through">¥499</span>
+                </div>
+                <button class="mofang-btn mofang-btn-primary mofang-btn-sm">
+                  购买
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mofang-store-section">
+      <div class="mofang-store-container">
+        <div class="mofang-store-features mofang-bento-grid mofang-bento-grid-4">
+          <div class="mofang-store-feature mofang-card mofang-p-xl mofang-flex-col mofang-flex-center mofang-fade-in-up">
+            <span class="mofang-store-feature-icon">🚚</span>
+            <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary mofang-m-top-md">免费配送</h3>
+            <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">订单满99元免运费</p>
+          </div>
+          <div class="mofang-store-feature mofang-card mofang-p-xl mofang-flex-col mofang-flex-center mofang-fade-in-up mofang-fade-in-up-delay-1">
+            <span class="mofang-store-feature-icon">🔄</span>
+            <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary mofang-m-top-md">7天无理由</h3>
+            <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">不满意可随时退换</p>
+          </div>
+          <div class="mofang-store-feature mofang-card mofang-p-xl mofang-flex-col mofang-flex-center mofang-fade-in-up mofang-fade-in-up-delay-2">
+            <span class="mofang-store-feature-icon">✅</span>
+            <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary mofang-m-top-md">正品保障</h3>
+            <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">100%正品，假一赔十</p>
+          </div>
+          <div class="mofang-store-feature mofang-card mofang-p-xl mofang-flex-col mofang-flex-center mofang-fade-in-up mofang-fade-in-up-delay-3">
+            <span class="mofang-store-feature-icon">💬</span>
+            <h3 class="mofang-text-base mofang-font-semibold mofang-text-primary mofang-m-top-md">客服在线</h3>
+            <p class="mofang-text-sm mofang-text-secondary mofang-m-top-sm">7x24小时在线服务</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mofang-store-footer">
+    <div class="mofang-store-container">
+      <div class="mofang-store-footer-content mofang-flex-between">
+        <div>
+          <div class="mofang-store-logo">
+            <span class="mofang-text-gradient mofang-text-xl mofang-font-bold">魔方 V10</span>
+          </div>
+          <p class="mofang-text-sm mofang-text-secondary mofang-m-top-md">精选好物，品质生活</p>
+        </div>
+        <div class="mofang-store-footer-links mofang-flex mofang-gap-xl">
+          <div>
+            <h4 class="mofang-text-base mofang-font-semibold mofang-text-primary mofang-m-bottom-md">商品分类</h4>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">数码产品</a>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">智能家居</a>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">生活周边</a>
+          </div>
+          <div>
+            <h4 class="mofang-text-base mofang-font-semibold mofang-text-primary mofang-m-bottom-md">帮助中心</h4>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">购买指南</a>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">售后服务</a>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">常见问题</a>
+          </div>
+          <div>
+            <h4 class="mofang-text-base mofang-font-semibold mofang-text-primary mofang-m-bottom-md">关于我们</h4>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">公司简介</a>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">联系我们</a>
+            <a href="#" class="mofang-text-sm mofang-text-secondary mofang-block mofang-m-bottom-sm">加入我们</a>
+          </div>
+        </div>
+      </div>
+      <div class="mofang-divider mofang-m-top-xl mofang-m-bottom-xl"></div>
+      <div class="mofang-store-footer-bottom mofang-flex-between">
+        <p class="mofang-text-sm mofang-text-secondary">© 2024 魔方 V10. 保留所有权利。</p>
+        <div class="mofang-store-footer-social mofang-flex mofang-gap-md">
+          <a href="#" class="mofang-text-secondary">📱</a>
+          <a href="#" class="mofang-text-secondary">💬</a>
+          <a href="#" class="mofang-text-secondary">📧</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    .mofang-store-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: var(--spacing-md) 0;
+    }
+
+    .mofang-store-header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-xl);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--spacing-lg);
+    }
+
+    .mofang-store-logo {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-xs);
+    }
+
+    .mofang-store-nav {
+      display: flex;
+      gap: var(--spacing-md);
+    }
+
+    .mofang-store-nav-item {
+      padding: var(--spacing-sm) var(--spacing-lg);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-normal);
+    }
+
+    .mofang-store-nav-item:hover {
+      color: var(--text-primary);
+      background: var(--bg-tertiary);
+    }
+
+    .mofang-store-nav-item-active {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: 0 4px 15px rgba(255, 102, 153, 0.3);
+    }
+
+    .mofang-store-header-right {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+    }
+
+    .mofang-store-search {
+      display: flex;
+      align-items: center;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-full);
+      padding: var(--spacing-xs) var(--spacing-md);
+      gap: var(--spacing-sm);
+    }
+
+    .mofang-store-search .mofang-input {
+      border: none;
+      background: transparent;
+      padding: 0;
+      width: 200px;
+    }
+
+    .mofang-store-search .mofang-input:focus {
+      box-shadow: none;
+    }
+
+    .mofang-store-search-btn {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 18px;
+      padding: var(--spacing-xs);
+      transition: transform var(--transition-fast);
+    }
+
+    .mofang-store-search-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .mofang-store-cart {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: all var(--transition-normal);
+    }
+
+    .mofang-store-cart:hover {
+      transform: scale(1.05);
+      border-color: var(--color-primary);
+    }
+
+    .mofang-store-cart-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      background: var(--gradient-primary);
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mofang-store-main {
+      padding: var(--spacing-2xl) 0;
+    }
+
+    .mofang-store-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-xl);
+    }
+
+    .mofang-store-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-2xl);
+      align-items: center;
+      padding: var(--spacing-2xl) 0;
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .mofang-store-hero-content {
+      max-width: 500px;
+    }
+
+    .mofang-store-hero-visual {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--spacing-lg);
+    }
+
+    .mofang-store-hero-card {
+      aspect-ratio: 1;
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-card);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .mofang-store-hero-card:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    .mofang-store-hero-card:nth-child(3) {
+      animation-delay: 1s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .mofang-store-hero-icon {
+      font-size: 64px;
+    }
+
+    .mofang-store-section {
+      padding: var(--spacing-2xl) 0;
+    }
+
+    .mofang-store-section-header {
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .mofang-store-products {
+      gap: var(--spacing-lg);
+    }
+
+    .mofang-product-card {
+      overflow: hidden;
+    }
+
+    .mofang-product-card-image {
+      position: relative;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mofang-product-card-icon {
+      font-size: 64px;
+    }
+
+    .mofang-product-card-tag {
+      position: absolute;
+      top: var(--spacing-md);
+      right: var(--spacing-md);
+    }
+
+    .mofang-product-card-price {
+      display: flex;
+      align-items: baseline;
+      gap: var(--spacing-sm);
+    }
+
+    .mofang-line-through {
+      text-decoration: line-through;
+    }
+
+    .mofang-store-features {
+      gap: var(--spacing-lg);
+    }
+
+    .mofang-store-feature-icon {
+      font-size: 48px;
+    }
+
+    .mofang-store-footer {
+      background: var(--bg-secondary);
+      padding: var(--spacing-2xl) 0;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .mofang-store-footer-links {
+      gap: var(--spacing-2xl);
+    }
+
+    .mofang-block {
+      display: block;
+    }
+
+    .mofang-store-footer-social a {
+      font-size: 24px;
+      transition: transform var(--transition-fast);
+    }
+
+    .mofang-store-footer-social a:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 1024px) {
+      .mofang-store-nav {
+        display: none;
+      }
+
+      .mofang-store-hero {
+        grid-template-columns: 1fr;
+      }
+
+      .mofang-store-hero-visual {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .mofang-store-header-inner,
+      .mofang-store-container {
+        padding: 0 var(--spacing-md);
+      }
+
+      .mofang-store-search .mofang-input {
+        width: 120px;
+      }
+    }
+  </style>
+
+  <script src="mofang-theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>魔方 V10 - 后台管理</title>
+  <link rel="stylesheet" href="mofang-theme.css">
+</head>
+<body>
+  <div class="mofang-layout">
+    <header class="mofang-header mofang-glass">
+      <div class="mofang-header-inner">
+        <div class="mofang-logo">
+          <span class="mofang-text-gradient mofang-text-xl mofang-font-bold">魔方 V10</span>
+        </div>
+        <nav class="mofang-nav">
+          <a href="#" class="mofang-nav-item mofang-nav-item-active">仪表盘</a>
+          <a href="#" class="mofang-nav-item">商品管理</a>
+          <a href="#" class="mofang-nav-item">订单管理</a>
+          <a href="#" class="mofang-nav-item">会员中心</a>
+          <a href="#" class="mofang-nav-item">系统设置</a>
+        </nav>
+        <div class="mofang-header-right">
+          <button class="mofang-theme-toggle" id="themeToggle" aria-label="切换主题">
+            <span class="mofang-theme-icon">🌙</span>
+          </button>
+          <div class="mofang-user">
+            <div class="mofang-avatar">
+              <span>U</span>
+            </div>
+            <span class="mofang-username">管理员</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mofang-main">
+      <div class="mofang-container">
+        <div class="mofang-page-header mofang-fade-in-up">
+          <div class="mofang-flex-between">
+            <div>
+              <h1 class="mofang-text-2xl mofang-font-bold mofang-text-primary">欢迎回来！</h1>
+              <p class="mofang-text-secondary mofang-text-base mofang-m-sm">今天是个好日子，让我们一起管理你的业务吧</p>
+            </div>
+            <button class="mofang-btn mofang-btn-primary">
+              <span>+ 新建商品</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mofang-bento-grid mofang-bento-grid-4 mofang-m-xl">
+          <div class="mofang-bento-item mofang-card mofang-p-xl mofang-fade-in-up mofang-fade-in-up-delay-1">
+            <div class="mofang-stat-icon" style="background: linear-gradient(135deg, rgba(255, 102, 153, 0.1) 0%, rgba(255, 179, 102, 0.1) 100%);">
+              <span>💰</span>
+            </div>
+            <div class="mofang-m-lg">
+              <div class="mofang-text-2xl mofang-font-bold mofang-text-primary">¥128,450</div>
+              <div class="mofang-text-sm mofang-text-secondary mofang-m-xs">今日销售额</div>
+            </div>
+            <div class="mofang-flex mofang-gap-sm">
+              <span class="mofang-badge mofang-badge-success">↑ 12.5%</span>
+              <span class="mofang-text-sm mofang-text-tertiary">较昨日</span>
+            </div>
+          </div>
+
+          <div class="mofang-bento-item mofang-card mofang-p-xl mofang-fade-in-up mofang-fade-in-up-delay-2">
+            <div class="mofang-stat-icon" style="background: linear-gradient(135deg, rgba(0, 210, 211, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);">
+              <span>📦</span>
+            </div>
+            <div class="mofang-m-lg">
+              <div class="mofang-text-2xl mofang-font-bold mofang-text-primary">1,284</div>
+              <div class="mofang-text-sm mofang-text-secondary mofang-m-xs">今日订单</div>
+            </div>
+            <div class="mofang-flex mofang-gap-sm">
+              <span class="mofang-badge mofang-badge-success">↑ 8.2%</span>
+              <span class="mofang-text-sm mofang-text-tertiary">较昨日</span>
+            </div>
+          </div>
+
+          <div class="mofang-bento-item mofang-card mofang-p-xl mofang-fade-in-up mofang-fade-in-up-delay-3">
+            <div class="mofang-stat-icon" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);">
+              <span>👥</span>
+            </div>
+            <div class="mofang-m-lg">
+              <div class="mofang-text-2xl mofang-font-bold mofang-text-primary">5,847</div>
+              <div class="mofang-text-sm mofang-text-secondary mofang-m-xs">活跃会员</div>
+            </div>
+            <div class="mofang-flex mofang-gap-sm">
+              <span class="mofang-badge mofang-badge-success">↑ 3.1%</span>
+              <span class="mofang-text-sm mofang-text-tertiary">较昨日</span>
+            </div>
+          </div>
+
+          <div class="mofang-bento-item mofang-card mofang-p-xl mofang-fade-in-up mofang-fade-in-up-delay-4">
+            <div class="mofang-stat-icon" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%);">
+              <span>⭐</span>
+            </div>
+            <div class="mofang-m-lg">
+              <div class="mofang-text-2xl mofang-font-bold mofang-text-primary">98.5%</div>
+              <div class="mofang-text-sm mofang-text-secondary mofang-m-xs">好评率</div>
+            </div>
+            <div class="mofang-flex mofang-gap-sm">
+              <span class="mofang-badge mofang-badge-primary">稳定</span>
+              <span class="mofang-text-sm mofang-text-tertiary">较昨日</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mofang-bento-grid mofang-bento-grid-3">
+          <div class="mofang-bento-item-large mofang-card mofang-p-xl mofang-fade-in-up">
+            <div class="mofang-flex-between mofang-m-bottom-lg">
+              <h2 class="mofang-text-lg mofang-font-semibold mofang-text-primary">销售趋势</h2>
+              <div class="mofang-flex mofang-gap-sm">
+                <button class="mofang-btn mofang-btn-ghost mofang-btn-sm">7天</button>
+                <button class="mofang-btn mofang-btn-outline mofang-btn-sm">30天</button>
+                <button class="mofang-btn mofang-btn-ghost mofang-btn-sm">90天</button>
+              </div>
+            </div>
+            <div class="mofang-chart-placeholder mofang-flex-center">
+              <div class="mofang-text-center">
+                <div class="mofang-text-4xl mofang-m-bottom-sm">📊</div>
+                <div class="mofang-text-secondary">图表区域</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-bento-item-tall mofang-card mofang-p-xl mofang-fade-in-up">
+            <div class="mofang-flex-between mofang-m-bottom-lg">
+              <h2 class="mofang-text-lg mofang-font-semibold mofang-text-primary">最新订单</h2>
+              <a href="#" class="mofang-text-sm mofang-text-primary">查看全部 →</a>
+            </div>
+            <div class="mofang-order-list mofang-flex-col mofang-gap-md">
+              <div class="mofang-order-item mofang-flex-between">
+                <div class="mofang-flex mofang-gap-md">
+                  <div class="mofang-order-avatar" style="background: linear-gradient(135deg, #FF6699 0%, #FFB366 100%);">
+                    <span>李</span>
+                  </div>
+                  <div>
+                    <div class="mofang-text-base mofang-font-medium mofang-text-primary">李小明</div>
+                    <div class="mofang-text-sm mofang-text-secondary">订单 #2024042001</div>
+                  </div>
+                </div>
+                <div class="mofang-text-right">
+                  <div class="mofang-text-base mofang-font-semibold mofang-text-primary">¥2,580</div>
+                  <span class="mofang-badge mofang-badge-success">已付款</span>
+                </div>
+              </div>
+              <div class="mofang-order-item mofang-flex-between">
+                <div class="mofang-flex mofang-gap-md">
+                  <div class="mofang-order-avatar" style="background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);">
+                    <span>王</span>
+                  </div>
+                  <div>
+                    <div class="mofang-text-base mofang-font-medium mofang-text-primary">王小红</div>
+                    <div class="mofang-text-sm mofang-text-secondary">订单 #2024042002</div>
+                  </div>
+                </div>
+                <div class="mofang-text-right">
+                  <div class="mofang-text-base mofang-font-semibold mofang-text-primary">¥1,299</div>
+                  <span class="mofang-badge mofang-badge-warning">待发货</span>
+                </div>
+              </div>
+              <div class="mofang-order-item mofang-flex-between">
+                <div class="mofang-flex mofang-gap-md">
+                  <div class="mofang-order-avatar" style="background: linear-gradient(135deg, #00D2D3 0%, #06B6D4 100%);">
+                    <span>张</span>
+                  </div>
+                  <div>
+                    <div class="mofang-text-base mofang-font-medium mofang-text-primary">张大大</div>
+                    <div class="mofang-text-sm mofang-text-secondary">订单 #2024042003</div>
+                  </div>
+                </div>
+                <div class="mofang-text-right">
+                  <div class="mofang-text-base mofang-font-semibold mofang-text-primary">¥899</div>
+                  <span class="mofang-badge mofang-badge-info">已发货</span>
+                </div>
+              </div>
+              <div class="mofang-order-item mofang-flex-between">
+                <div class="mofang-flex mofang-gap-md">
+                  <div class="mofang-order-avatar" style="background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);">
+                    <span>刘</span>
+                  </div>
+                  <div>
+                    <div class="mofang-text-base mofang-font-medium mofang-text-primary">刘小华</div>
+                    <div class="mofang-text-sm mofang-text-secondary">订单 #2024042004</div>
+                  </div>
+                </div>
+                <div class="mofang-text-right">
+                  <div class="mofang-text-base mofang-font-semibold mofang-text-primary">¥3,450</div>
+                  <span class="mofang-badge mofang-badge-primary">已完成</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mofang-bento-item mofang-card mofang-p-xl mofang-fade-in-up">
+            <div class="mofang-flex-between mofang-m-bottom-lg">
+              <h2 class="mofang-text-lg mofang-font-semibold mofang-text-primary">快捷操作</h2>
+            </div>
+            <div class="mofang-quick-actions mofang-grid" style="grid-template-columns: repeat(2, 1fr); gap: 12px;">
+              <button class="mofang-quick-action mofang-card mofang-card-sm mofang-p-lg">
+                <span class="mofang-quick-action-icon">➕</span>
+                <span class="mofang-text-sm mofang-text-primary mofang-m-top-sm">添加商品</span>
+              </button>
+              <button class="mofang-quick-action mofang-card mofang-card-sm mofang-p-lg">
+                <span class="mofang-quick-action-icon">📋</span>
+                <span class="mofang-text-sm mofang-text-primary mofang-m-top-sm">订单处理</span>
+              </button>
+              <button class="mofang-quick-action mofang-card mofang-card-sm mofang-p-lg">
+                <span class="mofang-quick-action-icon">👥</span>
+                <span class="mofang-text-sm mofang-text-primary mofang-m-top-sm">会员管理</span>
+              </button>
+              <button class="mofang-quick-action mofang-card mofang-card-sm mofang-p-lg">
+                <span class="mofang-quick-action-icon">⚙️</span>
+                <span class="mofang-text-sm mofang-text-primary mofang-m-top-sm">系统设置</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mofang-bento-item mofang-card mofang-p-xl mofang-fade-in-up">
+            <div class="mofang-flex-between mofang-m-bottom-lg">
+              <h2 class="mofang-text-lg mofang-font-semibold mofang-text-primary">热销商品</h2>
+            </div>
+            <div class="mofang-product-list mofang-flex-col mofang-gap-md">
+              <div class="mofang-product-item mofang-flex-between">
+                <div class="mofang-flex mofang-gap-md">
+                  <div class="mofang-product-thumb" style="background: linear-gradient(135deg, rgba(255, 102, 153, 0.2) 0%, rgba(255, 179, 102, 0.2) 100%);">
+                    <span>🎁</span>
+                  </div>
+                  <div>
+                    <div class="mofang-text-base mofang-font-medium mofang-text-primary">高级会员年卡</div>
+                    <div class="mofang-text-sm mofang-text-secondary">销量 1,234</div>
+                  </div>
+                </div>
+                <div class="mofang-text-primary mofang-font-semibold">¥299</div>
+              </div>
+              <div class="mofang-product-item mofang-flex-between">
+                <div class="mofang-flex mofang-gap-md">
+                  <div class="mofang-product-thumb" style="background: linear-gradient(135deg, rgba(0, 210, 211, 0.2) 0%, rgba(6, 182, 212, 0.2) 100%);">
+                    <span>🎯</span>
+                  </div>
+                  <div>
+                    <div class="mofang-text-base mofang-font-medium mofang-text-primary">专业版套餐</div>
+                    <div class="mofang-text-sm mofang-text-secondary">销量 856</div>
+                  </div>
+                </div>
+                <div class="mofang-text-primary mofang-font-semibold">¥599</div>
+              </div>
+              <div class="mofang-product-item mofang-flex-between">
+                <div class="mofang-flex mofang-gap-md">
+                  <div class="mofang-product-thumb" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);">
+                    <span>🚀</span>
+                  </div>
+                  <div>
+                    <div class="mofang-text-base mofang-font-medium mofang-text-primary">企业版永久</div>
+                    <div class="mofang-text-sm mofang-text-secondary">销量 432</div>
+                  </div>
+                </div>
+                <div class="mofang-text-primary mofang-font-semibold">¥1,999</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <style>
+    .mofang-layout {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mofang-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: var(--spacing-md) 0;
+    }
+
+    .mofang-header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-xl);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--spacing-lg);
+    }
+
+    .mofang-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+
+    .mofang-nav {
+      display: flex;
+      gap: var(--spacing-xs);
+      flex: 1;
+      justify-content: center;
+    }
+
+    .mofang-nav-item {
+      padding: var(--spacing-sm) var(--spacing-lg);
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-normal);
+    }
+
+    .mofang-nav-item:hover {
+      color: var(--text-primary);
+      background: var(--bg-tertiary);
+    }
+
+    .mofang-nav-item-active {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: 0 4px 15px rgba(255, 102, 153, 0.3);
+    }
+
+    .mofang-header-right {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+    }
+
+    .mofang-theme-toggle {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: all var(--transition-normal);
+    }
+
+    .mofang-theme-toggle:hover {
+      transform: scale(1.05);
+      border-color: var(--color-primary);
+    }
+
+    .mofang-user {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-md);
+      padding: var(--spacing-sm) var(--spacing-md);
+      background: var(--bg-secondary);
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+    }
+
+    .mofang-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-full);
+      background: var(--gradient-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .mofang-username {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .mofang-main {
+      flex: 1;
+      padding: var(--spacing-xl) 0;
+    }
+
+    .mofang-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-xl);
+    }
+
+    .mofang-page-header {
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .mofang-m-xl {
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .mofang-m-lg {
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .mofang-m-sm {
+      margin-top: var(--spacing-sm);
+    }
+
+    .mofang-m-xs {
+      margin-top: var(--spacing-xs);
+    }
+
+    .mofang-m-bottom-lg {
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .mofang-m-bottom-sm {
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .mofang-m-top-sm {
+      margin-top: var(--spacing-sm);
+    }
+
+    .mofang-stat-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .mofang-chart-placeholder {
+      height: 280px;
+      border-radius: var(--radius-md);
+      background: var(--bg-tertiary);
+    }
+
+    .mofang-text-center {
+      text-align: center;
+    }
+
+    .mofang-text-4xl {
+      font-size: 48px;
+    }
+
+    .mofang-text-right {
+      text-align: right;
+    }
+
+    .mofang-order-list,
+    .mofang-product-list {
+      gap: var(--spacing-md);
+    }
+
+    .mofang-order-item,
+    .mofang-product-item {
+      padding: var(--spacing-md);
+      border-radius: var(--radius-md);
+      background: var(--bg-tertiary);
+      transition: all var(--transition-normal);
+    }
+
+    .mofang-order-item:hover,
+    .mofang-product-item:hover {
+      background: var(--bg-hover);
+    }
+
+    .mofang-order-avatar,
+    .mofang-product-thumb {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .mofang-quick-actions {
+      gap: 12px;
+    }
+
+    .mofang-quick-action {
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: all var(--transition-normal);
+    }
+
+    .mofang-quick-action:hover {
+      transform: translateY(-4px);
+    }
+
+    .mofang-quick-action:active {
+      transform: scale(0.96);
+    }
+
+    .mofang-quick-action-icon {
+      font-size: 28px;
+      display: block;
+    }
+
+    @media (max-width: 1024px) {
+      .mofang-nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .mofang-header-inner {
+        padding: 0 var(--spacing-md);
+      }
+
+      .mofang-container {
+        padding: 0 var(--spacing-md);
+      }
+
+      .mofang-username {
+        display: none;
+      }
+    }
+  </style>
+
+  <script src="mofang-theme.js"></script>
+</body>
+</html>
