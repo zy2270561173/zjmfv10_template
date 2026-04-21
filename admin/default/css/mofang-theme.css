@@ -1,0 +1,332 @@
+/* 魔方主题 - 融合 2some.ren 风格 */
+
+/* 全局 CSS 变量 */
+:root {
+  --mofang-bg-page: #f8fafc;
+  --mofang-bg-container: #ffffff;
+  --mofang-gradient-primary: linear-gradient(135deg, #ff6699 0%, #ffb366 100%);
+  --mofang-color-success: #00d2d3;
+  --mofang-color-info: #6366f1;
+  --mofang-color-warning: #ffb366;
+  --mofang-color-error: #ff6b6b;
+  --mofang-radius-sm: 12px;
+  --mofang-radius-md: 16px;
+  --mofang-radius-lg: 20px;
+  --mofang-border-light: 1px solid rgba(0, 0, 0, 0.05);
+  --mofang-shadow-sm: 0 10px 25px -5px rgba(0, 0, 0, 0.02), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+  --mofang-shadow-md: 0 20px 40px -10px rgba(0, 0, 0, 0.08), 0 16px 20px -12px rgba(0, 0, 0, 0.08);
+  --mofang-shadow-lg: 0 30px 60px -15px rgba(0, 0, 0, 0.1), 0 24px 30px -18px rgba(0, 0, 0, 0.1);
+  --mofang-transition-fast: 0.15s ease-out;
+  --mofang-transition-base: 0.25s cubic-bezier(0.38, 0, 0.24, 1);
+  --mofang-transition-slow: 0.4s cubic-bezier(0.38, 0, 0.24, 1);
+}
+
+/* 页面背景 */
+body,
+html {
+  background-color: var(--mofang-bg-page);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* 通用容器 */
+.mofang-container {
+  background-color: var(--mofang-bg-container);
+  border-radius: var(--mofang-radius-md);
+  border: var(--mofang-border-light);
+  box-shadow: var(--mofang-shadow-sm);
+  transition: box-shadow var(--mofang-transition-base), transform var(--mofang-transition-base);
+}
+
+.mofang-container:hover {
+  box-shadow: var(--mofang-shadow-md);
+  transform: translateY(-2px);
+}
+
+/* 毛玻璃效果 */
+.mofang-glass {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Bento Grid 布局 */
+.mofang-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.mofang-bento-item {
+  background-color: var(--mofang-bg-container);
+  border-radius: var(--mofang-radius-md);
+  border: var(--mofang-border-light);
+  box-shadow: var(--mofang-shadow-sm);
+  padding: 24px;
+  transition: box-shadow var(--mofang-transition-base), transform var(--mofang-transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.mofang-bento-item:hover {
+  box-shadow: var(--mofang-shadow-md);
+  transform: translateY(-6px);
+}
+
+.mofang-bento-item[data-size="large"] {
+  grid-column: span 2;
+}
+
+.mofang-bento-item[data-size="tall"] {
+  grid-row: span 2;
+}
+
+/* 渐变按钮 */
+.mofang-btn-primary {
+  background: var(--mofang-gradient-primary);
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  border-radius: var(--mofang-radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--mofang-transition-fast), box-shadow var(--mofang-transition-base);
+  box-shadow: 0 4px 15px rgba(255, 102, 153, 0.3);
+}
+
+.mofang-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 102, 153, 0.4);
+}
+
+.mofang-btn-primary:active {
+  transform: scale(0.96);
+}
+
+/* 次要按钮 */
+.mofang-btn-secondary {
+  background-color: var(--mofang-bg-container);
+  border: var(--mofang-border-light);
+  color: var(--td-text-color-primary);
+  padding: 12px 28px;
+  border-radius: var(--mofang-radius-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color var(--mofang-transition-fast), transform var(--mofang-transition-fast), box-shadow var(--mofang-transition-base);
+}
+
+.mofang-btn-secondary:hover {
+  background-color: #f8fafc;
+  box-shadow: var(--mofang-shadow-sm);
+}
+
+.mofang-btn-secondary:active {
+  transform: scale(0.96);
+}
+
+/* 统计卡片 */
+.mofang-stat-card {
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  border-radius: var(--mofang-radius-md);
+  border: var(--mofang-border-light);
+  box-shadow: var(--mofang-shadow-sm);
+  padding: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mofang-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: var(--mofang-gradient-primary);
+  opacity: 0.08;
+  border-radius: 50%;
+  transform: translate(30px, -30px);
+}
+
+.mofang-stat-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--td-text-color-primary);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.mofang-stat-label {
+  font-size: 14px;
+  color: var(--td-text-color-secondary);
+  font-weight: 500;
+}
+
+.mofang-stat-change {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.mofang-stat-change.up {
+  background-color: rgba(0, 210, 211, 0.1);
+  color: var(--mofang-color-success);
+}
+
+.mofang-stat-change.down {
+  background-color: rgba(255, 107, 107, 0.1);
+  color: var(--mofang-color-error);
+}
+
+/* 商品卡片 */
+.mofang-product-card {
+  background-color: var(--mofang-bg-container);
+  border-radius: var(--mofang-radius-md);
+  border: var(--mofang-border-light);
+  box-shadow: var(--mofang-shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--mofang-transition-base), transform var(--mofang-transition-base);
+}
+
+.mofang-product-card:hover {
+  box-shadow: var(--mofang-shadow-md);
+  transform: translateY(-6px);
+}
+
+.mofang-product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%);
+}
+
+.mofang-product-content {
+  padding: 20px;
+}
+
+.mofang-product-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--td-text-color-primary);
+  margin-bottom: 8px;
+}
+
+.mofang-product-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff6699;
+  margin-bottom: 12px;
+}
+
+.mofang-product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--td-text-color-secondary);
+  font-size: 13px;
+}
+
+/* 输入框样式 */
+.mofang-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: var(--mofang-border-light);
+  border-radius: var(--mofang-radius-sm);
+  background-color: var(--mofang-bg-container);
+  font-size: 14px;
+  transition: border-color var(--mofang-transition-fast), box-shadow var(--mofang-transition-fast);
+}
+
+.mofang-input:focus {
+  outline: none;
+  border-color: #ff6699;
+  box-shadow: 0 0 0 3px rgba(255, 102, 153, 0.1);
+}
+
+/* 标签样式 */
+.mofang-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.mofang-tag-primary {
+  background: rgba(255, 102, 153, 0.1);
+  color: #ff6699;
+}
+
+.mofang-tag-success {
+  background: rgba(0, 210, 211, 0.1);
+  color: var(--mofang-color-success);
+}
+
+.mofang-tag-warning {
+  background: rgba(255, 179, 102, 0.1);
+  color: var(--mofang-color-warning);
+}
+
+/* 动画效果 */
+@keyframes mofang-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mofang-animate-fade-in-up {
+  animation: mofang-fade-in-up var(--mofang-transition-slow) ease-out;
+}
+
+/* 分割线 */
+.mofang-divider {
+  height: 1px;
+  background: var(--mofang-border-light);
+  margin: 20px 0;
+}
+
+/* 工具类 */
+.mofang-flex {
+  display: flex;
+}
+
+.mofang-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mofang-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mofang-text-gradient {
+  background: var(--mofang-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .mofang-bento-item[data-size="large"] {
+    grid-column: span 1;
+  }
+  .mofang-bento-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+}
